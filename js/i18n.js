@@ -175,8 +175,8 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
-    var saved = "en";
-    try { saved = localStorage.getItem("fw-lang") || "en"; } catch (e) {}
+    var saved = "ko";
+    try { saved = localStorage.getItem("fw-lang") || "ko"; } catch (e) {}
     applyLang(saved);
     document.querySelectorAll(".lang-btn").forEach(function (b) {
       b.addEventListener("click", function () { applyLang(b.getAttribute("data-lang")); });
