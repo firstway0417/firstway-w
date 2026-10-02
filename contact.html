@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONTACT :: FIRSTWAY INTERNATIONAL CO., LTD.</title>
+<link rel="icon" href="assets/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="logo" href="index.html"><img src="assets/logo-lockup.png" alt="FIRSTWAY INTERNATIONAL CO., LTD."></a>
+    <div class="bar-right">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="company.html" data-i18n="nav.company">COMPANY</a></li>
+          <li><a href="business.html" data-i18n="nav.business">BUSINESS</a></li>
+          <li><a href="contact.html" class="active" data-i18n="nav.contact">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ko">KO</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="min-height:38vh;background-image:url('assets/firstway_contact.jpg')">
+  <div class="wrap hero-inner">
+    <div class="eyebrow">CONTACT</div>
+    <h1 data-i18n="contact.hero.h1">Get in Touch</h1>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contact-grid">
+    <div class="contact-card">
+      <h3>FIRSTWAY INTERNATIONAL CO., LTD.</h3>
+      <div class="contact-row"><b data-i18n="contact.label.address">Address</b><span>서울특별시 중구 다동길 46, 다동빌딩 705호<br>Rm 705, Dadong B/D, 46 Dadong-gil, Jung-gu, Seoul, Republic of Korea</span></div>
+      <div class="contact-row"><b data-i18n="contact.label.tel">Tel</b><span>82-2-3789-2217</span></div>
+      <div class="contact-row"><b data-i18n="contact.label.fax">Fax</b><span>82-2-3789-2218</span></div>
+      <div class="contact-row"><b data-i18n="contact.label.email">Email</b><span><a href="mailto:account@firstway.co.kr">account@firstway.co.kr</a></span></div>
+    </div>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C%20%EC%A4%91%EA%B5%AC%20%EB%8B%A4%EB%8F%99%EA%B8%B8%2046&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Firstway International location"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="f-logo"><img src="assets/logo-lockup.png" alt="FIRSTWAY INTERNATIONAL CO., LTD."></div>
+      <p>퍼스트웨이 인터내셔널(주) · FIRSTWAY INTERNATIONAL CO., LTD.</p>
+      <p>서울특별시 중구 다동길 46, 다동빌딩 705호</p>
+      <p>Rm 705, Dadong B/D, 46 Dadong-gil, Jung-gu, Seoul, Korea</p>
+    </div>
+    <div>
+      <p>Tel. 82-2-3789-2217</p>
+      <p>Fax. 82-2-3789-2218</p>
+      <p>account@firstway.co.kr</p>
+    </div>
+    <div class="copyright">&copy; FIRSTWAY INTERNATIONAL CO., LTD. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/i18n.js" defer></script>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function(){
+  var nav = document.querySelector('.main-nav');
+  var open = nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', String(open));
+});
+</script>
+</body>
+</html>
